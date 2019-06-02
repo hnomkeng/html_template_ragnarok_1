@@ -31,3 +31,5 @@ for future maybe i'll make a tutorial video (youtube)
 ## CONTACT
 facebook tuntikorn supapkul
 www.facebook.com/joza1999
+## PREVIEW
+![alt text](https://raw.githubusercontent.com/jojo5528/html_template_ragnarok_1/master/preview.png)
