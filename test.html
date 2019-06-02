@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Template-RO</title>
+
+  <!--BOOTSTRAP-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!--JS-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="css/test.css">
+
+</head>
+<body>
+
+  <!--NAVBAR HEAD-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom p-0">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavHeaderContent" aria-controls="NavHeaderContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="NavHeaderContent">
+      <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">
+            หน้าหลัก
+            <span>HOME</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="InfoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            ข้อมูลเซิฟเวอร์
+            <span>SERVER INFO</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="InfoDropdown">
+            <a class="dropdown-item" href="#">ข้อมูลกิลด์วอร์</a>
+            <a class="dropdown-item" href="#">ข้อมูลบอส</a>
+            <a class="dropdown-item" href="#">ข้อมูลสัตว์เลี้ยง</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            แนะนำการเล่น
+            <span>GAME GUIDE</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="RegDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            สมัครสมาชิก
+            <span>REGISTER</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="RegDropdown">
+            <a class="dropdown-item" href="#">กฎระเบียบ</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            ดาวน์โหลด
+            <span>DOWNLOAD</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            อัตราตีบวก
+            <span>REFINE RATE</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="FreeItemDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            รับไอเทมฟรีทุกวัน
+            <span>GET FREE ITEM</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="FreeItemDropdown">
+            <a class="dropdown-item" href="#">LIKE & SHARE</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            คำถามที่พบบ่อย
+            <span>FAQ QUESTION</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            กลุ่มพูดคุย
+            <span>SOCIAL GROUP</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--CONTAINER-->
+  <div class="container-fluid">
+
+    <!--HEADER-->
+    <div id="row-header">
+      <!--LOGO & OPEN-->
+      <div class="row">
+        <!--SPACE-->
+        <div class="col-sm-1"></div>
+        <div class="col mt-5">
+          <img src="images/logo.png" class="img-fluid" alt="Logo">
+        </div>
+        <div class="col mt-5">
+          <img src="images/sv_open.png" class="img-fluid" alt="Logo">
+        </div>
+        <!--SPACE-->
+        <div class="col-sm-1"></div>
+      </div>
+      <!--NEW ITEM FIGURE-->
+      <div class="row mt-3">
+        <div class="col-lg" id="item-figure-slide">
+        </div>
+      </div>
+      <!--NOTICE & SERVER STATUS-->
+      <div class="row mt-3">
+		<!--SPACE-->
+		<div class="col-sm-1"></div>
+        <div class="col-sm-3">
+          <img src="images/sv_stats.png" alt="" class="img-fluid img-stats">
+        </div>
+        <div class="col-lg d-block mt-4 text-center">
+          <!--STATUS-->
+          <div class="card text-center d-inline-block col-sm-3 my-1">
+            <div class="card-body">
+              <h1 class="card-title">PLAYERS</h1>
+              <h2 class="card-text text-success text-stats">123</h2>
+            </div>
+          </div>
+          <div class="card text-center d-inline-block col-sm-3 my-1">
+            <div class="card-body">
+              <h1 class="card-title">PLAYERS</h1>
+              <h2 class="card-text text-success text-stats">123</h2>
+            </div>
+          </div>
+          <div class="card text-center d-inline-block col-sm-3 my-1">
+            <div class="card-body">
+              <h1 class="card-title">PLAYERS</h1>
+              <h2 class="card-text text-success text-stats">123</h2>
+            </div>
+          </div>
+          <!--MESSAGE-->
+          <div id="notice" class="d-block bg-light rounded p-0">
+            <div class="alert alert-dark mt-3 text-left" role="alert">
+              <h3>
+                <span class="badge badge-danger"><i class="fa fa-bullhorn"></i> ประกาศ</span>
+                <span class="text-normal">สวัสดี ทดสอบข้อความประกาศยาวหน่อยๆ</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+		<!--SPACE-->
+		<div class="col-sm-1"></div>
+      </div>
+    </div>
+
+    <!--CONTENT-->
+    <div id="content">
+      <div class="row">
+        <!--SPACE-->
+        <div class="col-sm-1"></div>
+        <!--MEMBER FORM-->
+        <div class="col-sm-3 rounded mb-3">
+          <form><div class="card text-warning rounded">
+            <div class="card-header text-center">
+              <h2 class="card-title">MEMBER FORM</h2>
+            </div>
+            <div class="card-body text-dark bg-white px-5 py-3">
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" id="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                  <label for="Password">Password</label>
+                  <input type="password" class="form-control" id="Password" placeholder="Password">
+                </div>
+            </div>
+            <div class="card-footer text-center py-3">
+              <button type="submit" class="btn btn-outline-warning btn-lg"><b>LOGIN</b></button>
+              <button type="reset" class="btn btn-outline-warning btn-lg"><b>REGISTER</b></button>
+            </div>
+          </div></form>
+        </div>
+        <!--NEWS BOX-->
+        <div class="col-lg">
+          <div class="card rounded">
+            <div class="card-body pb-5">
+              <nav>
+                <div class="nav nav-tabs bg-white rounded-top" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                </div>
+              </nav>
+              <hr>
+              <div class="tab-content bg-white rounded-bottom pt-5 px-5" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--SPACE-->
+        <div class="col-sm-1"></div>
+      </div>
+      <!--NEWS UPDATE-->
+      <hr class="bg-light mt-5">
+      <h1 class="text-center text-warning my-3">ข่าวสารอัพเดท</h1>
+      <div class="container-fluid my-5 text-center">
+        <!--FIGURE SECTION-->
+        <div class="card news-figure text-center d-inline-block col-sm-2 my-1 p-0">
+          <a href="" class="news-figure text-warning">
+            <div class="card-header m-0 p-0">
+              <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="News">
+            </div>
+            <div class="card-body">
+              <b class="text-custom">CARD TITLE</b>
+              <p class="text-secondary">card content</p>
+            </div>
+          </a>
+        </div>
+        <div class="card news-figure text-center d-inline-block col-sm-2 my-1 p-0">
+          <a href="" class="news-figure text-warning">
+            <div class="card-header m-0 p-0">
+              <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="News">
+            </div>
+            <div class="card-body">
+              <b class="text-custom">CARD TITLE</b>
+              <p class="text-secondary">card content</p>
+            </div>
+          </a>
+        </div>
+        <div class="card news-figure text-center d-inline-block col-sm-2 my-1 p-0">
+          <a href="" class="news-figure text-warning">
+            <div class="card-header m-0 p-0">
+              <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="News">
+            </div>
+            <div class="card-body">
+              <b class="text-custom">CARD TITLE</b>
+              <p class="text-secondary">card content</p>
+            </div>
+          </a>
+        </div>
+        <div class="card news-figure text-center d-inline-block col-sm-2 my-1 p-0">
+          <a href="" class="news-figure text-warning">
+            <div class="card-header m-0 p-0">
+              <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="News">
+            </div>
+            <div class="card-body">
+              <b class="text-custom">CARD TITLE</b>
+              <p class="text-secondary">card content</p>
+            </div>
+          </a>
+        </div>
+        <div class="card news-figure text-center d-inline-block col-sm-2 my-1 p-0">
+          <a href="" class="news-figure text-warning">
+            <div class="card-header m-0 p-0">
+              <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="News">
+            </div>
+            <div class="card-body">
+              <b class="text-custom">CARD TITLE</b>
+              <p class="text-secondary">card content</p>
+            </div>
+          </a>
+        </div>
+        <div class="card news-figure text-center d-inline-block col-sm-2 my-1 p-0">
+          <a href="" class="news-figure text-warning">
+            <div class="card-header m-0 p-0">
+              <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="News">
+            </div>
+            <div class="card-body">
+              <b class="text-custom">CARD TITLE</b>
+              <p class="text-secondary">card content</p>
+            </div>
+          </a>
+        </div>
+        <div class="card news-figure text-center d-inline-block col-sm-2 my-1 p-0">
+          <a href="" class="news-figure text-warning">
+            <div class="card-header m-0 p-0">
+              <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="News">
+            </div>
+            <div class="card-body">
+              <b class="text-custom">CARD TITLE</b>
+              <p class="text-secondary">card content</p>
+            </div>
+          </a>
+        </div>
+        <div class="card news-figure text-center d-inline-block col-sm-2 my-1 p-0">
+          <a href="" class="news-figure text-warning">
+            <div class="card-header m-0 p-0">
+              <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="News">
+            </div>
+            <div class="card-body">
+              <b class="text-custom">CARD TITLE</b>
+              <p class="text-secondary">card content</p>
+            </div>
+          </a>
+        </div>
+        <div class="card news-figure text-center d-inline-block col-sm-2 my-1 p-0">
+          <a href="" class="news-figure text-warning">
+            <div class="card-header m-0 p-0">
+              <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="News">
+            </div>
+            <div class="card-body">
+              <b class="text-custom">CARD TITLE</b>
+              <p class="text-secondary">card content</p>
+            </div>
+          </a>
+        </div>
+        <div class="card news-figure text-center d-inline-block col-sm-2 my-1 p-0">
+          <a href="" class="news-figure text-warning">
+            <div class="card-header m-0 p-0">
+              <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="News">
+            </div>
+            <div class="card-body">
+              <b class="text-custom">CARD TITLE</b>
+              <p class="text-secondary">card content</p>
+            </div>
+          </a>
+        </div>
+        <p class="mt-3">
+          <a class="btn btn-outline-warning btn-lg px-5" href="">ดูข่าวสารทั้งหมด</a>
+        </p>
+      </div>
+      <!--GUILDWAR REPORT-->
+      <hr class="bg-light mt-3">
+      <h1 class="text-center text-warning my-3">รายงานผลกิลด์วอร์</h1>
+      <div class="container-fluid my-3 text-center">
+        <div class="card">
+          <div class="card-body">
+            asdasdsasd
+          </div>
+          <div class="card-footer">
+            ล่าสุดเมื่อวันที่ 3 มิถุนายน พ.ศ.2562&emsp;เวลา 07:00 น.
+          </div>
+        </div>
+      </div>
+
+    </div><!--END OF CONTENT-->
+
+    <!--FOOTER-->
+    <div id="row-footer" class="mt-5 mb-5">
+      <div class="container text-center text-white">
+        <h1>
+          Template-RO <i class="fa fa-copyright"></i> 2019
+        </h1>
+        <h6 class="footer-link">
+          Design by <a href="https://www.facebook.com/joza1999" target="_blank" rel="noopener noreferrer">Tuntikorn.S</a>
+        </h6>
+        <p>
+          Ragnarok online Template-RO, Development public free to play service non-commercial.<br>
+          All other trademarks and logos belong to their respective owners.
+        </p>
+        <hr class="bg-light">
+        <div class="row text-left footer-link">
+          <!--SPACE-->
+          <div class="col-sm"></div>
+          <ul class="col">
+            <b class="text-light">LINKS</b>
+            <li><a href="#">aa</a></li>
+            <li><a href="#">asd</a></li>
+            <li><a href="#">asd</a></li>
+            <li><a href="#">asd</a></li>
+          </ul>
+          <ul class="col">
+            <b class="text-light">SOCIAL</b>
+            <li><a href="#">asd</a></li>
+            <li><a href="#">asd</a></li>
+            <li><a href="#">asd</a></li>
+            <li><a href="#">asd</a></li>
+          </ul>
+          <ul class="col">
+            <b class="text-light">CONTACT</b>
+            <li><a href="#">asd</a></li>
+            <li><a href="#">asd</a></li>
+            <li><a href="#">asd</a></li>
+            <li><a href="#">asd</a></li>
+          </ul>
+          <!--SPACE-->
+          <div class="col-sm"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
